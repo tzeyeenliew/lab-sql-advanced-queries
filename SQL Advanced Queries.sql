@@ -3,6 +3,8 @@ USE sakila;
 
 ### Q2 For each film, list actor that has acted in more films.
 
+### Credits to Oktay for miraculously simple and elegant code! I couldn't hatch the problem using CTE, which is what I construe from the lab instructions, so I had to try another way :(
+
 SELECT F.title,FA.actor_id, CONCAT(b.first_name,' ', b.last_name) AS Name
 FROM film AS F
 JOIN film_actor FA
